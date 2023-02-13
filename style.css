@@ -1,0 +1,160 @@
+@font-face {
+    font-family: roboto-mono-regular;
+    src: url(/myassets/fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-mono-light;
+    src: url(/myassets/fonts/RobotoMono-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto-mono-regular;
+    box-sizing: border-box;
+}
+.app-layout{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    "header header"
+    "sidebar main";
+    background-image: radial-gradient(transparent -100%, black 100%), url(/Blizzard-Client-UI\ 7/background/games.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+header{
+    grid-area: header;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+header ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+/* Username and avatar */
+.username-avatar-wrapper, .username-status-wrapper > .username-status{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.username-status .user-status{
+    color: rgb(24, 207, 24);
+    font-size: 12px;
+}
+#offline{
+    color: red;
+    font-size: 12px;
+}
+.username-avatar img {
+    border-radius: 50%;
+    width: 70px;
+}
+.user-wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+.user-wrapper .online-friends-wrapper{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+.user-wrapper .online-friends-wrapper > img{
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(-20%);
+}
+.online-friends-wrapper.dropdown .dropdown-content{
+    transform: translate(-40%, 52%);
+    min-width: 120px;
+}
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.dropdown-content li:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* side bar */
+.side-bar{
+    grid-area: sidebar;
+    /* background-color: green; */
+    text-align: center;
+    padding: 6px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.side-bar img {
+    width: 100%;
+    /* max-height: 70px; */
+}
+main{
+    grid-area: main;
+    /* background-color: blue; */
+    overflow-y: auto;
+    padding: 2rem 4rem;
+}
+
+.whats-new{
+    margin-bottom: 2rem;
+}
+.whats-new-header{
+    display: flex;
+    justify-content: space-between;
+}
+.whats-new-banner{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.whats-new-banner img{
+    width: 400px;
+    border-radius: 7px;
+}
+.play-now-banner{
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+.play-now-banner img{
+    width: 200px;
+    border-radius: 7px;
+}
+img{
+    cursor: pointer;
+}

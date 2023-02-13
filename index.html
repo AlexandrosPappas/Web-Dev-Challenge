@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- my CSS file -->
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Hack the box</title>
+</head>
+<body>
+    <div class="app-layout">
+        <header>
+            <img class="logo" src="/Blizzard-Client-UI 7/logo/battlenet.svg" alt="Blizzard Company logo">
+            <nav>
+                <ul>
+                    <li>Games</li>
+                    <li>Social</li>
+                    <li>Shop</li>
+                    <li>News</li>
+                </ul>
+            </nav>
+            <div class="user-wrapper">
+                <div class="username-status-wrapper">
+                    <div class="username">
+                        <span>TheSkiu</span>
+                    </div>
+                    <div class="username-status">
+                        <p class="user-status">Online</p><span class="dropdown">
+                            <i class="bi bi-caret-down-fill"></i>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li id="offline">Offline</li>
+                                </ul>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="username-avatar-wrapper">
+                    <div class="username-avatar">
+                        <img src="/Blizzard-Client-UI 7/avatar/wow.jpg" alt="user avatar for the app">
+                    </div>
+                    <span class="dropdown">
+                        <i class="bi bi-caret-down-fill dropdown-btn"></i>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>Profile</li>
+                                <li>Favorites</li>
+                                <li>Settings</li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="online-friends-wrapper dropdown">
+                    <span>14</span>
+                    <img src="/Blizzard-Client-UI 7/online-friends-icon.svg" alt="a photo that shows how many of the users friends are online">
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Alex</li>
+                            <li>George</li>
+                            <li>Kostis</li>
+                            <li>Lazaros</li>
+                            <li>Giannis</li>
+                            <li>Andreas</li>
+                            <li>Maria</li>
+                            <li>Hara</li>
+                            <li>Myrtw</li>
+                            <li>Vasilis</li>
+                            <li>Sofia</li>
+                            <li>Xaris</li>
+                            <li>Nikos</li>
+                            <li>Elena</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="side-bar">
+            <div class="side-bar-item">BLIZZARD</div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/wow.png" alt="wow game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/diablo.png" alt="diablo game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/starcraft.png" alt="starcraft game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/heartstone.png" alt="heartstone game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/heroes.png" alt="heroes game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/overwatch.png" alt="overwatch game logo"></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/starcraft_remastered.png" alt="starcraft remastered game logo"></div>
+            <!-- Dummy side bar -->
+            <!-- <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/diablo.png" alt=""></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/diablo.png" alt=""></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/diablo.png" alt=""></div>
+            <div class="side-bar-item"><img src="/Blizzard-Client-UI 7/game-icons/diablo.png" alt=""></div> -->
+        </div>
+        <main>
+            <div class="whats-new">
+                <div class="whats-new-header">
+                    <h3>whats new?</h3>
+                    <h3>Show more</h3>
+                </div>
+                <div class="whats-new-banner">
+                    <img src="/Blizzard-Client-UI 7/whats-new/overwatch-league.png" alt="">
+                    <img src="/Blizzard-Client-UI 7/whats-new/the-boomsday-project.png" alt="">
+                    <img src="/Blizzard-Client-UI 7/whats-new/wowt-battle-for-azeroth.png" alt="">
+                    <img src="/Blizzard-Client-UI 7/whats-new/overwatch-league.png" alt="">
+                    <img src="/Blizzard-Client-UI 7/whats-new/the-boomsday-project.png" alt="">
+                    <img src="/Blizzard-Client-UI 7/whats-new/wowt-battle-for-azeroth.png" alt="">
+                </div>
+            </div>
+
+            <div class="play-now">
+                <div class="play-now-header">
+                    <h3>Play now!</h3>
+                </div>
+                <div class="play-now-banner">
+                    <img src="/Blizzard-Client-UI 7/games/diablo.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/hearthstone.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/heroes.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/overwatch.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/starcraft.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/starcraft_remastered.jpeg" alt="">
+                    <img src="/Blizzard-Client-UI 7/games/wow.jpeg" alt="">
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
