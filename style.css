@@ -50,6 +50,7 @@ header nav ul li {
     align-items: center;
     padding: 5px 2px;
     transition: 0.5s;
+    font-size: 1.5rem;
 }
 header nav ul li:hover{
     transform: scale(1.2);
@@ -124,7 +125,32 @@ header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+/* mobile nav */
+.mobile-nav ul{
+    list-style: none;
+}
+.mobile-nav .user-name-avatar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+}
+.mobile-nav .user-avatar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mobile-nav .user-friends{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+}
+.mobile-nav .user-friends img {
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
 /* side bar */
 .side-bar{
     grid-area: sidebar;
@@ -216,6 +242,9 @@ a:link, a:visited{
     color: white;
     text-decoration: none;
 }
+li::marker{
+    background-color: blue;
+}
 @media(max-width: 650px){
     .app-layout{
     display: grid;
@@ -228,6 +257,7 @@ a:link, a:visited{
 }
 main{
     padding: 0;
+    justify-content: unset;
 }
 .side-bar{
     display: flex;
@@ -249,5 +279,8 @@ nav{
 }
 #blizzard{
     display: none;
+}
+.dropdown-content {
+    transform: translate(-80%);
 }
 }
